@@ -45,9 +45,12 @@ cout<<ans;
 }
 
 Q)Given an array A of size N, you need to find the maximum sum that can be obtained from the elements of the array (the selected elements need not be contiguous). You may even decide to take no element to get a sum of 0.
-Ans) #include <bits/stdc++.h> // header file includes every Standard library
-using namespace std;
 
+Ans)
+
+
+#include <bits/stdc++.h>
+using namespace std;
 int main() {
 
 	// Your code here
