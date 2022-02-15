@@ -64,7 +64,7 @@ int main() {
 	   v.push_back(x);
 	}
 
-	sort(v.begin(),v.end());
+	
 	long long sum=0;
 	for(int i=0;i<N;i++){
 		if(v[i]<0){
