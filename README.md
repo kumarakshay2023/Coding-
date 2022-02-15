@@ -1,5 +1,5 @@
 # Coding-
-Q)     Maximum and Minimum in an Array
+Q1)     Maximum and Minimum in an Array
 Ans)    int maxi=INT_MIN;
         int mini=INT_MAX;
         int N;
@@ -14,7 +14,7 @@ Ans)    int maxi=INT_MIN;
         }
         cout<<maxi<<" "<<mini<<endl;
         
-Q)Max freq  Given an array of N integers, give the number with maximum frequency. If multiple numbers have maximum frequency print the maximum number among them.
+Q2)Max freq  Given an array of N integers, give the number with maximum frequency. If multiple numbers have maximum frequency print the maximum number among them.
 
 Ans)  #include <bits/stdc++.h> // header file includes every Standard library
 using namespace std;
@@ -44,7 +44,7 @@ cout<<ans;
 	return 0;
 }
 
-Q)Given an array A of size N, you need to find the maximum sum that can be obtained from the elements of the array (the selected elements need not be contiguous). You may even decide to take no element to get a sum of 0.
+Q3)Given an array A of size N, you need to find the maximum sum that can be obtained from the elements of the array (the selected elements need not be contiguous). You may even decide to take no element to get a sum of 0.
 
 Ans)
 
