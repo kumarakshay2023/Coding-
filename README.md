@@ -75,3 +75,54 @@ int main() {
 	cout<<sum;
 	return 0;
 }
+Q4)Given a sorted array having N elements, find the indices of the first and last occurrences of an element X in the given array.
+
+Note: If the number X is not found in the array, return '-1' as an array.
+
+Ans)vector<int> firstAndLast(vector<int> &arr, int n, int x) {
+        // Code here
+        int start=0;
+        int end=n-1;
+        int firstoc=-1;
+        int lastoc=-1;
+        while(start<=end){
+           int mid=start+(end-start)/2;
+           if(arr[mid]==x){
+               firstoc=mid;
+               end=mid-1;
+           }
+           else if(arr[mid]<x){
+               start=mid+1;
+           }
+            else if(arr[mid]>x){
+               end=mid-1;
+           }
+        }
+        start=0;
+        end=n-1;
+        vector<int>v;
+    
+         while(start<=end){
+           int mid=start+(end-start)/2;
+           if(arr[mid]==x){
+               lastoc=mid;
+              start=mid+1;
+           }
+              else if(arr[mid]<x){
+              start=mid+1;
+           }
+           else if(arr[mid]>x){
+               end=mid-1;
+           }
+        }
+      
+        if(firstoc==-1||lastoc==-1){
+           v.push_back(-1);
+        }
+        else{
+            v.push_back(firstoc);
+            v.push_back(lastoc);
+        }
+        return v;
+        }
+	}
