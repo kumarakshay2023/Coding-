@@ -126,3 +126,44 @@ Ans)vector<int> firstAndLast(vector<int> &arr, int n, int x) {
         return v;
         }
 	}
+	
+Q5)Given a sorted array of N integers a[], and Q queries. For each query, you will be given one element K your task is to print the number of elements that are smaller than or equal to K.
+Ans)#include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+
+int main() {
+
+	// Your code here
+	int N;
+	cin>>N;
+	long long arr[N];
+	for(int i=0;i<N;i++){
+		cin>>arr[i];
+	}
+	int Q;
+	cin>>Q;
+	while(Q--){
+		int x;
+		cin>>x;
+         int start=0;
+		 int end=N-1;
+		 int smaller=N;
+		 while(start<=end){
+			 int mid=start+(end-start)/2;
+			 if(arr[mid]>x){
+				 smaller=mid;
+				 end=mid-1;
+				 }
+				 else{
+					 start=mid+1;
+				 }
+		 }
+		 cout<<smaller<<endl;
+
+
+		
+		
+		
+	}
+	return 0;
+}
