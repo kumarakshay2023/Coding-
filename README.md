@@ -167,3 +167,19 @@ int main() {
 	}
 	return 0;
 }
+	
+	                                                   Sorting Alogrithms
+	
+       * Selection Sort TC-:(o(n^2))
+int arr[]={64,25,12,22,11};
+for(int i=0;i<n-1;i++){// total numbers of round =arraysize-1
+  int minIndex=i; // index of current element;
+  for(int j=i+1;j<n;j++){
+	 if(arr[j]<arr[minIndex]{
+	   minIndex=j;
+	}
+	}
+	swap(arr[i],arr[minIndex]);
+			
+			
+}
