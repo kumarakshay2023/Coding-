@@ -183,4 +183,38 @@ for(int i=0;i<n-1;i++){// total numbers of round =arraysize-1
 			
 			
 }
- 
+Q)Given a binary sorted non-increasing array arr of size N. You need to print the count of 1's in the binary array.
+Ans) #include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+
+int main() {
+
+	// Your code here
+	int t;
+	cin>>t;
+	while(t--){
+ int n;
+	cin>>n;
+	int arr[n];
+	for(int i=0;i<n;i++){
+		cin>>arr[i];
+	}
+	int l=0;
+	int r=n-1;
+	int ans=0;
+	while(l<=r){
+		int mid=l+(r-l)/2;
+		if(arr[mid]==1){
+			ans=max(ans,mid+1);
+			l=mid+1;
+		}
+		else{
+			r=mid-1;
+		}
+	}
+	cout<<ans<<endl;
+	}
+	
+
+	return 0;
+}
