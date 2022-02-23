@@ -218,3 +218,29 @@ int main() {
 
 	return 0;
 }
+Q)Given an array Arr of N integers, your task is to print the sum of elements present at even places and print the product of elements present at the odd places.
+Ans) #include <bits/stdc++.h> // header file includes every Standard library
+using namespace std;
+
+int main() {
+
+	// Your code here
+    int n;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+    int sum=0;
+    int p=1;
+    for(int i=0;i<n;i++){
+          if((i+1)%2!=0){
+              p=p*arr[i];
+          }
+          else{
+              sum=sum+arr[i];
+          }
+    }
+    cout<<sum<<" "<<p;
+	return 0;
+}
